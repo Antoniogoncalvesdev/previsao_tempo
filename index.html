@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Antônio Gonçalves">
+    <meta name="keywords" content="weather, tempo, previsão do tempo">
+    <meta name="description" content="Previsão do Tempo | Weather">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Previsão do Tempo</title>
+</head>
+<body id="bodyBack">
+   <main id="mainBack">
+        <section id="container">
+            <h1 style="margin-top: 7px; display: flex; justify-content: center; color: white;">
+                Confira o clima de uma cidade:
+            </h1>
+            <div id="container_input">
+                <input type="text" id="inputBox" placeholder="Digite uma cidade!">
+                <button id="btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 50 50">
+                        <path d="M 21 3 C 11.601563 3 4 10.601563 4 20 C 4 29.398438 11.601563 37 21 37 C 24.355469 37 27.460938 36.015625 30.09375 34.34375 L 42.375 46.625 L 46.625 42.375 L 34.5 30.28125 C 36.679688 27.421875 38 23.878906 38 20 C 38 10.601563 30.398438 3 21 3 Z M 21 7 C 28.199219 7 34 12.800781 34 20 C 34 27.199219 28.199219 33 21 33 C 13.800781 33 8 27.199219 8 20 C 8 12.800781 13.800781 7 21 7 Z"></path>
+                    </svg> 
+                </button>
+            </div>
+            <p id="today"></p>
+            <div id="flag">
+                <p id="nameCity"><b></b></p>           
+                <img src="" alt="">
+                <div id="flag-container">
+                </div>
+            </div>
+            <p id="timeInCity"></p>
+            <div id="temp_and_img">
+                <p id="descrip" ></p>
+                <img src="" alt="" id="iconImg">
+            </div>
+            <p id="humidity"></p>
+        </section>
+   </main>
+   <footer>
+        <p>By&nbsp;
+            <a href="https://www.linkedin.com/in/ant%C3%B4nio-gon%C3%A7alves-641353215/" target="_blank" rel="noopener">
+                Antônio Gonçalves
+            </a>
+        </p>
+    </footer>
+</body>
+<script src="script.js"></script>
