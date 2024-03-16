@@ -60,14 +60,13 @@ async function showCityBr(){
 
 
 //ativa butao enter
-inputBox.addEventListener('keyup', (e) => {
-    if(e.code === "Enter"){
-        const city = e.target.value;
-        showCityBr(city);
-        dateTodayF();
+document.addEventListener("keypress", async (e) => {
+    if (e.key === "Enter") {
+        const city = inputBox.value;
+        await showCityBr(city)
+        dateTodayF()
     }
 });
-
 btn.addEventListener("click", () => { 
     if(inputBox.value === ""){
         alert("Digite uma cidade válida")
