@@ -43,7 +43,6 @@ async function showCityBr(){
         
         //Pegando a data de hoje e mudando tamanho do container
         function dateTodayF(){
-            try{
             const today = document.querySelector("#today")
             const date= new Date();
             const dateToday = date.getDate();
@@ -54,15 +53,11 @@ async function showCityBr(){
 
             const container = document.querySelector("#container")
             container.style.height = "400px"
-            } catch(error){
-                alert("s")
-            }
         }
-        dateTodayF()
-    
     } catch (error) {
         alert("Digite uma cidade válida!")
     }
+    dateTodayF()
 };
 
 //ativa butao enter
