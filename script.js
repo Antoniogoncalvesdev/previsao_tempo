@@ -55,7 +55,11 @@ async function showCityBr(){
             container.style.height = "400px"
         }
     } catch (error) {
-        alert("Digite uma cidade válida!")
+        if(inputBox.value === ""){
+            alert("Digite uma cidade válida")
+        }else {
+            alert("Digite uma cidade válida")
+        }
     }
     dateTodayF()
 };
@@ -69,8 +73,5 @@ document.addEventListener("keypress", async (e) => {
 });
 
 btn.addEventListener("click", () => { 
-    if(inputBox.value === ""){
-        alert("Digite uma cidade válida")
-    }
         showCityBr(); 
 });
